@@ -27,7 +27,7 @@ def read_model(file_name):
 
 
 # def render(vertices, faces, camera):
-#   transorm_vertices(vertices, camera)
+#   transformed_vertices = transorm_vertices(vertices, camera)
 #   project vertices on camera on yz plane
 #   project vertices on camera on xz plane
 #   draw projected vertices on a square canvas

@@ -93,12 +93,14 @@ def draw(image_data, image_name):
     plt.clf()
     plt.xlim(-0.5,0.5)
     plt.ylim(-0.5,0.5)
+    plt.gca().set_aspect('equal', adjustable='box')
     for line_data in image_data:
-        line = plt.Line2D((line_data[0][0], line_data[1][0]), (line_data[0][1], line_data[1][1]), lw=2.5)
+        line = plt.Line2D((line_data[0][0], line_data[1][0]), (line_data[0][1], line_data[1][1]), lw=1)
         plt.gca().add_line(line)
     plt.title('Camera: ' + image_name)
     plt.axis('off')
     plt.savefig(image_name)
+    # plt.show()
 
 
 def main():
